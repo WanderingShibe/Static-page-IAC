@@ -1,2 +1,3 @@
 oci_provider_variables.auto.tfvars
 terraform.exe
+terraform-provider-oci_v5.30.0.exe
