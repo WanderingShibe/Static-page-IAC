@@ -1,1 +1,1 @@
-*.tfvars
+oci_provider_variables.auto.tfvars
