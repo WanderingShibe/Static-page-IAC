@@ -1,0 +1,9 @@
+---
+- name: Configure web server with Nginx
+  hosts: webserver
+  become: true
+  roles:
+    - common
+    - users
+    - nginx
+    - certbot
