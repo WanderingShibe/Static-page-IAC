@@ -1,6 +1,6 @@
 ---
 - name: Configure web server with Nginx
-  hosts: webserver
+  hosts: oracle_vps
   become: true
   roles:
     - common

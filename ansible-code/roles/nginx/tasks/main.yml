@@ -2,4 +2,14 @@
 - name: Install Nginx
   apt:
     name: nginx
-    state: present
+    state: latest
+    update_cache: yes
+
+- name: All access to TCP port 80
+  ufw:
+    rule: allow
+    port: 80
+    proto: tcp
+
+  notify:
+    - Restart nginx server

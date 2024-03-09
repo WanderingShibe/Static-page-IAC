@@ -1,3 +1,9 @@
 users:
-  - name: exampleuser
-    groups: sudo
+  - name: andy
+    groups: admin
+
+  - name: grace
+    groups: admin
+
+  - name: steve
+    groups: general
