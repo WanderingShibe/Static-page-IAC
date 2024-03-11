@@ -1,3 +1,3 @@
-## Ansible Project Setup
+## Ansible + Terraform Setup
+The Ansible + Terraform code used to deploy an Oracle Cloud VPS and configure it to host a webserver for my static webpage blog
 
-This project is configured to setup a web server using Nginx, manage users, and secure connections with Certbot for TLS certificates.
