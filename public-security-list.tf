@@ -58,6 +58,29 @@ resource "oci_core_security_list" "public-security-list" {
     }
   }
 
+  # Allow webserver to access neccessary ports
+  ingress_security_rules {
+    stateless   = false
+    source      = "0.0.0.0/0"
+    source_type = "CIDR_BLOCK"
+    protocol    = "6" # TCP protocol number
+    tcp_options {
+      min = 80
+      max = 80
+    }
+  }
+
+  ingress_security_rules {
+    stateless   = false
+    source      = "0.0.0.0/0"
+    source_type = "CIDR_BLOCK"
+    protocol    = "6" # TCP protocol number
+    tcp_options {
+      min = 443
+      max = 443
+    }
+  }
+
 
 }
 
