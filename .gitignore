@@ -4,6 +4,7 @@
 *.tfstate.*
 *.tfvars.*
 **/main.yml
+**common.yaml
 variables.auto.tfvars
 .terraform.lock.hcl
 terraform.tfstate
