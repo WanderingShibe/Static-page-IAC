@@ -3,9 +3,11 @@
 *.tfstate
 *.tfstate.*
 *.tfvars.*
+**/main.yml
 variables.auto.tfvars
 .terraform.lock.hcl
 terraform.tfstate
 terraform.tfstate.backup
+hosts.ini
 .venv
 .vscode

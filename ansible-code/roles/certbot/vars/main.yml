@@ -1,8 +1,0 @@
----
-certbot_email: "lodissianaria@tutanota.com"
-domain_name: "wanderingshibe.xyz"
-challenge_var: "http-01"
-csr_path: "/etc/ssl/csr/{{ domain_name }}.csr"
-private_key_path: "/etc/ssl/private/{{ domain_name }}.key"
-fullchain_path: "/etc/ssl/fullchain.pem"
-acme_directory_path: "https://acme-v02.api.letsencrypt.org/directory"

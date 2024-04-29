@@ -5,5 +5,8 @@ users:
   - name: grace
     groups: admin
 
-  - name: steve
-    groups: general
+  - name: deploy
+    groups: www-data
+    home: /var/www/public/
+    create_home: yes
+    shell: /bin/bash

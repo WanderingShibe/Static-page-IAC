@@ -6,6 +6,18 @@
     name: "*"
     state: latest
 
+- name: Add HTTP service to the firewall permanently
+  ansible.builtin.command:
+    cmd: firewall-cmd --add-service=http --permanent
+
+- name: Add HTTPs service to the firewall permanently
+  ansible.builtin.command:
+    cmd: firewall-cmd --add-service=https --permanent
+
+- name: Reload firewall to apply changes
+  ansible.builtin.command:
+    cmd: firewall-cmd --reload
+
 - name: Update the OS
   ansible.builtin.apt:
     upgrade: dist

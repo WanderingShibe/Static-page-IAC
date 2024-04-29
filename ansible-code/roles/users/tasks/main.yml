@@ -1,5 +1,4 @@
----
-- name: Ensure user exists
+- name: Ensure users exists
   user:
     name: "{{ item.name }}"
     state: present

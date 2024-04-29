@@ -4,9 +4,7 @@ variable "vcn_dns_label" { type = string }
 module "vcn" {
   source  = "oracle-terraform-modules/vcn/oci"
   version = "3.1.0"
-  # insert the 5 required variables here
 
-  # Required Inputs
   compartment_id = var.compartment_id
   region         = var.region
 
