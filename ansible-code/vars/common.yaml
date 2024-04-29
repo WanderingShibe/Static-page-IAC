@@ -1,4 +1,0 @@
-INVENTORY_LOCATION: /home/florence7810/ansible-code/inventory/staging/hosts.ini
-VPS_HOST: 143.47.231.116
-SSH_USER: ubuntu
-SSH_KEY_LOCATION: /home/florence7810/.ssh/lodis-ssh-key
